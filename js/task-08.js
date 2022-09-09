@@ -30,7 +30,7 @@ const emailValue = email.value.trim();
 const passwordValue = password.value.trim();
 
 if (!emailValue || !passwordValue) {
-    alert('Warning! All fills must be complane');
+    return alert('Warning! All fills must be complane');
   }
 
   const obj = {
@@ -42,3 +42,18 @@ if (!emailValue || !passwordValue) {
 
 
 }
+
+// const formElemRef = document.querySelector('#formElem');
+
+// const formData = new FormData(formElemRef);
+
+// console.log('formData :>> ', formData);
+
+// const obj = {};
+// formData.append('age', 25);
+// console.log('formData.has(age); :>> ', formData.has('user'));
+// formData.forEach((value, key) => {
+//   obj[key] = value;
+// });
+// console.log('obj :>> ', obj);
+// console.log(formData);

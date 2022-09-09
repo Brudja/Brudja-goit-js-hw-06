@@ -8,11 +8,11 @@ const nameLabel = document.querySelector("#name-output");
 
 elInput.addEventListener("input", onInputChange);
 
-const DefText = nameLabel.textContent;
+const defText = nameLabel.textContent;
 
 function onInputChange(event){
-    nameLabel.textContent = event.currentTarget.value;
+    nameLabel.textContent = event.currentTarget.value.trim();
     if(nameLabel.textContent === ""){
-        nameLabel.textContent = DefText  
+        nameLabel.textContent = defText  
         };
     }
